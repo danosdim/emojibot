@@ -1,6 +1,6 @@
 //----------variables
 const Discord = require('discord.js');
-const {prefix} = require('./config.json');
+const prefix = '?';
 const client = new Discord.Client();
 const cmds = require('./cmds.json');
 const emojis = require('./emojis.json');
