@@ -1,11 +1,11 @@
 //----------variables
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+const {prefix} = require('./config.json');
 const client = new Discord.Client();
 const cmds = require('./cmds.json');
 const emojis = require('./emojis.json');
 let response;
-
+const token = process.env.token;
 
 client.once('ready', () => {
   console.log('Ready!');
